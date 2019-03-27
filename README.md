@@ -1,4 +1,4 @@
 17.Node.js
 Node.js czyli js po za przeglądarką
-repository -->
+repository --> https://github.com/MichalAW/17.Node.js.git
 site -->
