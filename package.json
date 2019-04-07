@@ -7,7 +7,7 @@
     "test": "npm-run-all",
     "test:html": "globstar nu-html-checker *.html",
     "test:echo": "echo \"Error: no test specified\" && exit 1",
-    "start:node": "node index.js",
+    "start:node": "node js/app.js",
     "start:project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
