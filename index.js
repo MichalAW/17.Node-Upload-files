@@ -1,15 +1,37 @@
-var fs = require('fs');
-var colors = require('colors');
+var http = require('http');
 
-fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
-    console.log('Dane przed zapisem!'.blue);
-    console.log(data);
-    fs.appendFile('./tekst.txt', '\nA tak wyglądają po zapisie!', function(err) {
-        if (err) throw err;
-        console.log('Zapisano!'.blue);
-        fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
-            console.log('Dane po zapisie'.blue)
-            console.log(data);
-        });
-    });
+var server = http.createServer();
+server.on('request', function (request, response) {
+    //tutaj coś się dzieje :)
 });
+server.listen(9000);
+
+server.on('request', function (request, response) {
+    response.write('Hello world!');
+    response.end();
+});
+
+response.write('Hello world');
+response.write('<h1>This is awesome!</h1>');
+response.write('<body>');
+response.write('<h1>Hello world!</h1>');
+response.write('</body>');
+response.end();
+
+var http = require('http');
+
+var server = http.createServer();
+
+server.on('request', function (request, response) {
+    response.setHeader("Content-Type", "text/html; charset=utf-8");
+    if (request.method === 'GET' && request.url === '/hello') {
+        response.write('<h1>Hello World!</h1>');
+            response.end();
+    } else {
+            response.statusCode = 404;
+            response.write('<h1>404: Zła ścieżka!</h1>');
+            response.end();
+    }
+});
+
+server.listen(8080);
