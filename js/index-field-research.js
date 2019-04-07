@@ -1,23 +1,31 @@
-var OSinfo = require('../modules/OSinfo');
+var fs = require('fs');
+var StatMode = require('stat-mode');
 
-process.stdin.setEncoding('utf-8');
-process.stdin.on('readable', function() {
-	var input = process.stdin.read();
-	if (input !== null) {
-		var instruction = input.trim();
-		switch(instruction) {
-			case '/exit':
-				process.stdout.write('Quitting app!\n');
-				process.exit()
-				break;
-			case '/sayhello':
-				process.stdout.write('hello!\n');
-				break;
-			case '/getOSinfo':
-				// informacje o systemie
-				OSinfo.print();
-			default:
-				process.stderr.write('Wrong instruction!\n');
-		};
-	}
+// fs.stat('./cat.jpg', function(err, stats) {
+//  var statMode = new StatMode(stats);
+//  console.log(statMode.toString());
+// });
+
+// fs.readFile('./tekst.txt', function(err, data) {
+//  console.log(data);
+// });
+
+fs.writeFile('./tekst.txt', 'Tekst, który zapiszemy w pliku tekst.txt',
+function(err) {
+    if (err) throw err; // jeśli pojawi się błąd, wyrzuć wyjątek
+    console.log('Zapisano!');
+});
+
+
+fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
+    console.log('Dane przed zapisem!');
+    console.log(data);
+    fs.writeFile('./tekst.txt', 'A tak wyglądają po zapisie!', function(err) {
+        if (err) throw err;
+        console.log('Zapisano!');
+        fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
+            console.log('Dane po zapisie')
+            console.log(data);
+        });
+    });
 });
