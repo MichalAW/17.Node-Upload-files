@@ -12,10 +12,10 @@ server.on('request', function (request, response) {
 			response.end();
 		});
 	} else {
-		fs.readFile('../images/cat.jpeg', function (error, data) {
+		fs.readFile('../images/cat.jpg', function (error, data) {
 		  	if (error) throw error;
 		    response.statusCode = 404;
-		  	response.write('<html><body><img src="data:image/jpeg;base64,')
+		  	response.write('<html><body><img src="data:image/jpg;base64,')
 		  	response.write(Buffer.from(data).toString('base64'));
 		  	response.end('"/></body></html>');
 		});
