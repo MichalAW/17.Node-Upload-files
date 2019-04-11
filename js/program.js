@@ -1,5 +1,5 @@
 process.stdin.on('readable', function() {
-    // metoda .read() ma za zadanie odczytać co użytkownik podał na wejściu
+// the .read () method is to read what the user has given at the input
     var input = process.stdin.read();
     var instruction = input.toString().trim();
     switch (input !== null) {
