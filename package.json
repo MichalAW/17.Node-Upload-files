@@ -1,37 +1,37 @@
 {
-  "name": "nauka_npm",
-  "version": "1.0.0",
-  "description": "17.Node.js\r Node.js czyli js po za przeglądarką\r repository --> https://github.com/MichalAW/17.Node.js.git\r site -->  https://michalaw.github.io/17.Node.js/",
-  "main": "index.html",
-  "scripts": {
-    "start:nodemon": "nodemon index.js",
-    "start:node": "node js/app.js",
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MichalAW/17.Node.js.git"
-  },
-  "keywords": [],
-  "author": "MichalAW michal.wanta@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MichalAW/17.Node.js/issues"
-  },
-  "homepage": "https://github.com/MichalAW/17.Node.js#readme",
-  "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.3",
-    "globstar": "^1.0.0",
-    "node-sass": "^4.11.0",
-    "onchange": "^5.2.0"
-  },
-  "dependencies": {
-    "colors": "^1.3.3",
-    "formidable": "^1.2.1",
-    "npm-run-all": "^4.1.5",
-    "nu-html-checker": "^0.1.0",
-    "sass": "^1.16.0",
-    "save-dev": "^2.0.0",
-    "stat-mode": "^0.3.0"
-  }
+    "name": "17.9.Upload-for-files",
+    "version": "1.0.0",
+    "description": "17.Node.js\r Node.js czyli js po za przeglądarką\r repository --> https://github.com/MichalAW/17.Node.js.git\r site -->  https://michalaw.github.io/17.Node.js/",
+    "main": "index.html",
+    "scripts": {
+        "start:node": "node index.js",
+        "start:nodemon": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MichalAW/17.Node.js.git"
+    },
+    "keywords": [],
+    "author": "MichalAW michal.wanta@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MichalAW/17.Node.js/issues"
+    },
+    "homepage": "https://github.com/MichalAW/17.Node.js#readme",
+    "devDependencies": {
+        "autoprefixer-cli": "^1.0.0",
+        "browser-sync": "^2.26.3",
+        "globstar": "^1.0.0",
+        "node-sass": "^4.11.0",
+        "onchange": "^5.2.0"
+    },
+    "dependencies": {
+        "colors": "^1.3.3",
+        "formidable": "^1.2.1",
+        "npm-run-all": "^4.1.5",
+        "nu-html-checker": "^0.1.0",
+        "sass": "^1.16.0",
+        "save-dev": "^2.0.0",
+        "stat-mode": "^0.3.0"
+    }
 }
