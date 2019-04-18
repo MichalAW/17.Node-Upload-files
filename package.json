@@ -4,17 +4,18 @@
     "description": "17.Node.js\r Node.js czyli js po za przeglądarką\r repository --> https://github.com/MichalAW/17.Node.js.git\r site -->  https://michalaw.github.io/17.Node.js/",
     "main": "index.html",
     "scripts": {
-        "start:node": "node app/program.js",
+        "test": "echo \"Error:no test specifed\" && exit 1",
+        "start:node": "node app/program.js"
     },
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MichalAW/17.Node.js.git"
+        "type": "git",
+        "url": "git+https://github.com/MichalAW/17.Node.js.git"
     },
     "keywords": [],
     "author": "MichalAW michal.wanta@gmail.com",
     "license": "ISC",
     "bugs": {
-    "url": "https://github.com/MichalAW/17.Node.js/issues"
+        "url": "https://github.com/MichalAW/17.Node.js/issues"
     },
     "homepage": "https://github.com/MichalAW/17.Node.js#readme",
     "devDependencies": {
