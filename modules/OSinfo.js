@@ -19,6 +19,6 @@ function getOSinfo() {
 	console.log('Uptime: ', (uptime / 60).toFixed(0), 'min');
 	console.log('User name: ', userInfo.username);
 	console.log('Home dir: ', userInfo.homedir);
-}
+};
 
 exports.print = getOSinfo;
