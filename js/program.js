@@ -4,8 +4,8 @@ process.stdin.on('readable', function() {
     var instruction = input.toString().trim();
     var inputForSwitch = (input !== null);
     var instructionForCase = (instruction === '/exit');
-    switch ((inputForSwitch)) {
-        case ((instructionForCase)) :
+    switch (inputForSwitch) {
+        case (instructionForCase) :
             process.stdout.write('Quitting app!\n');
             process.exit();
         default : 
