@@ -1,8 +1,8 @@
 {
-  "name": "17.Node.js",
+  "name": "17.3.Study-environment)",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "program.js",
   "scripts": {
   },
   "repository": {
@@ -17,16 +17,10 @@
   },
   "homepage": "https://github.com/MichalAW/17.Node.js#readme",
   "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.3",
     "globstar": "^1.0.0",
-    "node-sass": "^4.11.0",
     "onchange": "^5.2.0"
   },
   "dependencies": {
-    "npm-run-all": "^4.1.5",
-    "nu-html-checker": "^0.1.0",
-    "sass": "^1.16.0",
     "save-dev": "^2.0.0"
   }
 }
