@@ -19,7 +19,6 @@
     },
     "homepage": "https://github.com/MichalAW/17.Node.js#readme",
     "devDependencies": {
-        "globstar": "^1.0.0",
     },
     "dependencies": {
         "stat-mode": "^0.3.0"
