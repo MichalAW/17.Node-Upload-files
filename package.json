@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/MichalAW/17.Node.js/issues"
   },
-  "homepage": "https://github.com/MichalAW/17.Node.js#readme",
-  "devDependencies": {
-    "globstar": "^1.0.0",
-  }
+  "homepage": "https://github.com/MichalAW/17.Node.js#readme"
 }
