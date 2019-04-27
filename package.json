@@ -8,8 +8,8 @@
         "start:node": "node index.js"
     },
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MichalAW/17.Node.js.git"
+        "type": "git",
+        "url": "git+https://github.com/MichalAW/17.Node.js.git"
     },
     "keywords": [],
     "author": "MichalAW michal.wanta@gmail.com",
@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/MichalAW/17.Node.js#readme",
     "dependencies": {
+        "colors": "^1.3.3",
         "stat-mode": "^0.3.0"
     }
 }
