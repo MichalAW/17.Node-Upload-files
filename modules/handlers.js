@@ -22,6 +22,15 @@ exports.welcome = function(request, response) {
     });
 }
 
+exports.apperance = function(request, response) {
+    console.log("tworzę styl strony");
+    fs.readFile('css/style.css', function(err, css) {
+        response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+        response.write(css);
+        response.end();
+    });
+}
+
 exports.show = function(request, response) {
     fs.readFile("test.png", "binary", function(error, file) {
         response.writeHead(200, {"Content-Type": "image/png"});
