@@ -20,11 +20,6 @@ exports.welcome = function(request, response) {
         response.write(html);
         response.end();
     });
-    fs.readFile('css/style.css', function(err, css) {
-        response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
-        response.write(css);
-        response.end();
-    });
 }
 
 exports.show = function(request, response) {
