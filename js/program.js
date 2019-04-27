@@ -5,7 +5,8 @@ process.stdin.on('readable', function() {
     // input must be 'true'
     if (!input) {
         return;
-    }
+    };
+    //case only need a value
     switch(instruction) {
         case '/exit':
             process.stdout.write('Quitting app!\n');
