@@ -7,7 +7,7 @@ process.stdin.on('readable', function() {
     
     if (!input) {
         return;
-    }
+    };
     
     switch (instruction) {
         case '/exit':
