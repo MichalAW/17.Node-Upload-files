@@ -14,10 +14,10 @@ server.on('request', function (request, response) {
 	} else {
         response.setHeader('Content-Type', 'image/png; charset=utf-8');
 		fs.readFile('./cat.png', function (error, data) {
-		  	if (error) throw error;
-		    response.statusCode = 404;
-		  	response.write(data);
-		  	response.end();
+            if (error) throw error;
+            response.statusCode = 404;
+            response.write(data);
+            response.end();
 		});
 	}
 });
