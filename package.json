@@ -4,7 +4,6 @@
     "description": "17.Node.js\r Node.js czyli js po za przeglądarką\r repository --> https://github.com/MichalAW/17.Node.js.git\r site -->  https://michalaw.github.io/17.Node.js/",
     "main": "index.js",
     "scripts": {
-        "start:node": "node index.js",
         "start:nodemon": "nodemon index.js"
     },
     "repository": {
