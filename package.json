@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "description": "17.Node.js\r Node.js, behind website\r repository --> https://github.com/MichalAW/17.Node.js.git\r site -->  https://michalaw.github.io/17.Node.js/",
     "main": "program.js",
-    "scripts": {
-        "start:node": "node index.js",
-    },
+    "scripts": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/MichalAW/17.Node.js.git"
