@@ -11,7 +11,7 @@ server.on('request', function (request, response) {
             response.write(data);
             response.end();
         });
-	} else {
+    }   else {
         response.setHeader('Content-Type', 'image/png; charset=utf-8');
         fs.readFile('./cat.png', function (error, data) {
             if (error) throw error;
