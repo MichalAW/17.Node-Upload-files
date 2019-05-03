@@ -6,20 +6,21 @@ function newTime() {
     var h = parseInt(uptime / 3600);
     var s = (uptime % 3600);
     var min = parseInt(s / 60);
-    var s = parseInt(s % 60);
+    var setMinutes = min > 0
+    var setHours = h > 0
 
-    if (min > 0) {
-        if (h > 0) {
+    if (setMinutes) {
+        if (setHours) {
             {
-                console.log('Uptime: ${h } h ${min} min ${s} s')
+                console.log(`Uptime: ${h } h ${min} min ${s} s`)
             }
         } else {
             {
-                console.log('Uptime: ${min} mins ${s} s')
+                console.log(`Uptime: ${min} mins ${s} s`)
             }
         }
     } else {
-        console.log('Uptime: ${s} s')
+        console.log(`Uptime: ${s} s`)
     }
 }
 
