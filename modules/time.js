@@ -9,7 +9,7 @@ function timeConvertion(numSec) {
     
     var result = sec + 'sec';
     
-    if (min > 0) {
+    if (min > 0 || h > 0) {
         result = min + 'min ' + result;
     }
 
