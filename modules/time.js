@@ -1,15 +1,13 @@
-var os = require('os');
-
 function timeConvertion(numSec) {
     // Caluculation
-    var h = parseInt(numSec / 3600);
+    var h = parseInt(numSec / 3600, 0);
     var s = (numSec % 3600);
-    var min = parseInt(s / 60);
+    var min = parseInt(s / 60, 0);
     var sec = s % 60;
     
     var result = sec + 'sec';
     
-    if (min > 0 || h > 0) {
+    if (min > 0 ) {
         result = min + 'min ' + result;
     }
 
