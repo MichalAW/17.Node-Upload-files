@@ -1,8 +1,8 @@
 function timeConvertion(numSec) {
     // Caluculation
-    var h = parseInt(numSec / 3600, 0);
+    var h = parseInt(numSec / 3600, 10);
     var s = (numSec % 3600);
-    var min = parseInt(s / 60, 0);
+    var min = parseInt(s / 60, 10);
     var sec = s % 60;
     
     var result = sec + 'sec';
