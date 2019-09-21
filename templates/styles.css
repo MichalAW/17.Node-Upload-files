@@ -1,0 +1,28 @@
+body {
+    background-color: #dfe4ea;
+    margin: 0 auto;
+}
+
+div {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff6b81;
+    text-align: center;
+}
+
+input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+label {
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
