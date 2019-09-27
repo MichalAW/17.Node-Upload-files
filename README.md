@@ -1,5 +1,6 @@
 # 17.Node.js
-Node.js czyli js po za przeglądarką
+First contact with backend. 
+App for uploading images
 
 # Uruchomienie
 1. Najpierw uruchom komende "start:nodemon"
