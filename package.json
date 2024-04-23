@@ -20,7 +20,7 @@
     "devDependencies": {},
     "dependencies": {
         "colors": "^1.3.3",
-        "formidable": "^1.2.1",
+        "formidable": "^3.2.4",
         "stat-mode": "^0.3.0"
     }
 }
